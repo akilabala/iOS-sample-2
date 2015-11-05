@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Prime" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6UV-ki-g7d">
+                                <rect key="frame" x="237" y="155" width="127" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="GVR-Mu-J7Y"/>
+                                    <constraint firstAttribute="height" constant="30" id="a0w-Ol-ACA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TH6-iG-c2w">
+                                <rect key="frame" x="133" y="374" width="335" height="42"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="Qic-mm-7gK"/>
+                                    <constraint firstAttribute="height" constant="42" id="zrW-jB-D9j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.89906758069992065" green="0.043555028736591339" blue="0.90126645565032959" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Is it prime?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsB-ZE-jTr">
+                                <rect key="frame" x="203" y="64" width="194" height="31"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Y1k-Q0-l6C"/>
+                                    <constraint firstAttribute="width" constant="194" id="dx5-Yq-qJk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <color key="textColor" red="0.96368271112442017" green="0.0620102658867836" blue="0.33736094832420349" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IyK-SL-8Jk">
+                                <rect key="frame" x="242" y="262" width="116" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lxz-Xt-YIW"/>
+                                    <constraint firstAttribute="width" constant="116" id="zyL-No-KSJ"/>
+                                </constraints>
+                                <state key="normal" title="Tell me now!"/>
+                                <connections>
+                                    <action selector="showResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rSM-MH-RSz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TH6-iG-c2w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8KY-zi-5Qx"/>
+                            <constraint firstItem="IyK-SL-8Jk" firstAttribute="top" secondItem="6UV-ki-g7d" secondAttribute="bottom" constant="77" id="CVM-hc-1s8"/>
+                            <constraint firstItem="IyK-SL-8Jk" firstAttribute="top" secondItem="6UV-ki-g7d" secondAttribute="bottom" constant="30" id="DFV-O2-r8X"/>
+                            <constraint firstItem="TH6-iG-c2w" firstAttribute="top" secondItem="IyK-SL-8Jk" secondAttribute="bottom" constant="40" id="Dhu-2g-OO5"/>
+                            <constraint firstItem="TH6-iG-c2w" firstAttribute="top" secondItem="IyK-SL-8Jk" secondAttribute="bottom" constant="35" id="Glm-Tq-PAi"/>
+                            <constraint firstItem="6UV-ki-g7d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VXA-xY-WBC"/>
+                            <constraint firstItem="IyK-SL-8Jk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a8R-sF-HUw"/>
+                            <constraint firstItem="zsB-ZE-jTr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eFx-b3-Dur"/>
+                            <constraint firstItem="IyK-SL-8Jk" firstAttribute="top" secondItem="6UV-ki-g7d" secondAttribute="bottom" constant="77" id="fM8-cL-PGA"/>
+                            <constraint firstItem="zsB-ZE-jTr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="grN-HV-spa"/>
+                            <constraint firstItem="6UV-ki-g7d" firstAttribute="top" secondItem="zsB-ZE-jTr" secondAttribute="bottom" constant="35" id="qn4-aw-LCg"/>
+                            <constraint firstItem="TH6-iG-c2w" firstAttribute="top" secondItem="IyK-SL-8Jk" secondAttribute="bottom" constant="82" id="rC9-Ve-dKe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TH6-iG-c2w" secondAttribute="bottom" constant="184" id="tgv-Ui-1kD"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CVM-hc-1s8"/>
+                                <exclude reference="fM8-cL-PGA"/>
+                                <exclude reference="Dhu-2g-OO5"/>
+                                <exclude reference="rC9-Ve-dKe"/>
+                                <exclude reference="tgv-Ui-1kD"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="number" destination="6UV-ki-g7d" id="ezb-mT-X0o"/>
+                        <outlet property="resultLabel" destination="TH6-iG-c2w" id="4OK-DX-UAE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-501" y="-651"/>
+        </scene>
+    </scenes>
+</document>
